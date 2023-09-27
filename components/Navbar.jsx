@@ -27,7 +27,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex flex-col w-full shadow-lg relative">
+    <div className="flex flex-col w-full shadow-lg fixed z-10 bg-white">
       <div className="flex px-[30px] md:px-[130px] justify-between items-center p-4 w-full">
         <Link href="" className="fs-[2rem]">
           Medical Web
@@ -37,14 +37,14 @@ const Navbar = () => {
             <FiPhoneCall size={30} />
             <div>
               <p>345-231-9782</p>
-              <p>Emergency Phone</p>
+              <p className="text-[12px]">Emergency Phone</p>
             </div>
           </div>
           <div className="flex items-center gap-2">
             <IoMdClock size={40} />
             <div>
               <p>Monday - Friday</p>
-              <p>9.00 AM - 9.00 PM</p>
+              <p className="text-[12px]">9.00 AM - 9.00 PM</p>
             </div>
           </div>
         </div>

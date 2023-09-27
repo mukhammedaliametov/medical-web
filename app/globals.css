@@ -5,3 +5,7 @@
 html{
   scroll-behavior: smooth;
 }
+
+.hero-bg{
+  background-image: url('../public/hero-bg.jpg');
+}
