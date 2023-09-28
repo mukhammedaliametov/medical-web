@@ -14,7 +14,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      'orbitron': ['Orbitron']
+      // 'montserrat': ['Montserrat']
     }
   },
   plugins: [],
