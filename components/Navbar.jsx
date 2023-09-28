@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { IoMdClock } from "react-icons/io";
 import { LiaTelegramPlane } from "react-icons/lia";
 import { FiFacebook, FiInstagram, FiPhoneCall } from "react-icons/fi";
@@ -13,6 +13,7 @@ const Navbar = () => {
     { name: "Home", url: "/" },
     { name: "About", url: "/about" },
     { name: "Services", url: "/services" },
+    { name: "Managements", url: "/managements" },
     { name: "News", url: "/news" },
     { name: "Contact", url: "/contact" },
   ];
@@ -27,18 +28,24 @@ const Navbar = () => {
     setNav(false);
   };
 
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    setInterval(() => setTime(new Date()), 1000);
+  }, []);
+
   return (
     <div className="flex flex-col shadow-lg z-10 bg-white w-full">
       <div className="flex justify-between items-center px-[30px] md:px-[50px] py-3">
         <Link
           href=""
-          className="flex items-center gap-4 text-2xl cursor-pointer"
+          className="flex items-center gap-4 text-2xl cursor-pointer font-bold"
         >
           <Image
             src="https://ssv.uz/assets/public/images/logo.svg"
             alt=""
-            width='80'
-            height='10'
+            width="80"
+            height="10"
           />
           Muynak-RMB
         </Link>
@@ -65,7 +72,6 @@ const Navbar = () => {
       </div>
       <div className="block border-t-[1px] mx-[30px] md:mx-[130px]"></div>
       <div className="flex px-[30px] md:px-[130px] justify-center md:justify-between items-center p-5 w-full">
-        
         <ul className="hidden md:flex gap-5">
           {navItem.map((link) => (
             <li>
@@ -74,6 +80,11 @@ const Navbar = () => {
           ))}
         </ul>
         <div className="flex gap-3">
+          <div className="border-r-[1px] pr-3">
+            <p className='font-bold'>
+              {time.getHours()}:{time.getMinutes()}:{time.getSeconds()}
+            </p>
+          </div>
           <Link href="">
             <LiaTelegramPlane size={22} />
           </Link>
@@ -86,9 +97,6 @@ const Navbar = () => {
           <Link href="">
             <AiOutlineLinkedin size={22} />
           </Link>
-          <div className="border-l-[1px] pl-3">
-            <p>16:11 - 28 - 09 - 2023</p>
-          </div>
         </div>
       </div>
       <ul
