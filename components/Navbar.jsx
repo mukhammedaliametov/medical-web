@@ -51,7 +51,7 @@ const Navbar = () => {
         </Link>
 
         <div className="hidden sm:flex items-center gap-6">
-          <div className="lg:flex items-center gap-2">
+          <div className="hidden md:flex items-center gap-2">
             <FiPhoneCall size={30} />
             <div>
               <Link href="tel: 345-231-9782">345-231-9782</Link>
@@ -66,12 +66,12 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className="block sm:hidden" onClick={handleClick}>
+        <div className="block md:hidden" onClick={handleClick}>
           {nav ? <FaTimes size={25} /> : <FaBars size={25} />}
         </div>
       </div>
       <div className="block border-t-[1px] mx-[30px] md:mx-[130px]"></div>
-      <div className="flex px-[30px] md:px-[130px] justify-center md:justify-between items-center p-5 w-full">
+      <div className="flex px-[30px] md:px-[50px] justify-center md:justify-between items-center p-5 w-full">
         <ul className="hidden md:flex gap-5">
           {navItem.map((link) => (
             <li>
@@ -102,8 +102,8 @@ const Navbar = () => {
       <ul
         className={
           nav
-            ? "block absolute bg-white top-[96px] w-full text-center p-6 left-0 shadow-lg ease-in-out duration-300 sm:hidden z-10"
-            : "block absolute bg-white top-[96px] w-full text-center p-6 left-[-100%] shadow-lg ease-in-out duration-300 sm:hidden z-10"
+            ? "block absolute bg-white top-[96px] w-full text-center p-6 left-0 shadow-lg ease-in-out duration-300 md:hidden z-10"
+            : "block absolute bg-white top-[96px] w-full text-center p-6 left-[-100%] shadow-lg ease-in-out duration-300 md:hidden z-10"
         }
       >
         {navItem.map((link) => (
