@@ -6,6 +6,7 @@ import { FiFacebook, FiInstagram, FiPhoneCall } from "react-icons/fi";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const navItem = [
@@ -27,20 +28,30 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex flex-col w-full shadow-lg fixed z-10 bg-white">
-      <div className="flex px-[30px] md:px-[130px] justify-between items-center p-4 w-full">
-        <Link href="" className="fs-[2rem]">
-          Medical Web
+    <div className="flex flex-col shadow-lg z-10 bg-white w-full">
+      <div className="flex justify-between items-center px-[30px] md:px-[50px] py-3">
+        <Link
+          href=""
+          className="flex items-center gap-4 text-2xl cursor-pointer"
+        >
+          <Image
+            src="https://ssv.uz/assets/public/images/logo.svg"
+            alt=""
+            width='80'
+            height='10'
+          />
+          Muynak-RMB
         </Link>
+
         <div className="hidden sm:flex items-center gap-6">
-          <div className="flex items-center gap-2">
+          <div className="lg:flex items-center gap-2">
             <FiPhoneCall size={30} />
             <div>
-              <p>345-231-9782</p>
+              <Link href="tel: 345-231-9782">345-231-9782</Link>
               <p className="text-[12px]">Emergency Phone</p>
             </div>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="hidden lg:flex items-center gap-2">
             <IoMdClock size={40} />
             <div>
               <p>Monday - Friday</p>
@@ -52,9 +63,10 @@ const Navbar = () => {
           {nav ? <FaTimes size={25} /> : <FaBars size={25} />}
         </div>
       </div>
-      <div className="hidden sm:block border-t-[1px] mx-[30px] md:mx-[130px]"></div>
-      <div className="hidden sm:flex px-[30px] md:px-[130px] justify-between items-center p-5 w-full">
-        <ul className="flex gap-5">
+      <div className="block border-t-[1px] mx-[30px] md:mx-[130px]"></div>
+      <div className="flex px-[30px] md:px-[130px] justify-center md:justify-between items-center p-5 w-full">
+        
+        <ul className="hidden md:flex gap-5">
           {navItem.map((link) => (
             <li>
               <Link href={link.url}>{link.name}</Link>
@@ -74,13 +86,16 @@ const Navbar = () => {
           <Link href="">
             <AiOutlineLinkedin size={22} />
           </Link>
+          <div className="border-l-[1px] pl-3">
+            <p>16:11 - 28 - 09 - 2023</p>
+          </div>
         </div>
       </div>
       <ul
         className={
           nav
-            ? "block absolute bg-white top-[60px] w-full text-center p-6 left-0 shadow-lg ease-in-out duration-300 sm:hidden"
-            : "block absolute bg-white top-[60px] w-full text-center p-6 left-[-100%] shadow-lg ease-in-out duration-300 sm:hidden"
+            ? "block absolute bg-white top-[96px] w-full text-center p-6 left-0 shadow-lg ease-in-out duration-300 sm:hidden z-10"
+            : "block absolute bg-white top-[96px] w-full text-center p-6 left-[-100%] shadow-lg ease-in-out duration-300 sm:hidden z-10"
         }
       >
         {navItem.map((link) => (
