@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <div className="flex flex-col shadow-lg z-10 bg-[#F2F4F6] w-full">
-      <div className="flex justify-between items-center px-[30px] md:px-[50px] py-3">
+      <div className="flex justify-between items-center px-[30px] md:px-[50px] 2xl:px-[80px] py-3">
         <Link
           href=""
           className="flex items-center gap-4 text-2xl cursor-pointer font-montserrat"
@@ -69,7 +69,7 @@ const Navbar = () => {
           {nav ? <LiaTimesSolid size={25} /> : <LiaBarsSolid size={25} />}
         </div>
       </div>
-      <div className="bg-[#1F3C88] text-white flex px-[30px] md:px-[60px] justify-center md:justify-between items-center p-5 w-full">
+      <div className="bg-[#1F3C88] text-white flex px-[30px] md:px-[60px] 2xl:px-[80px] justify-center md:justify-between items-center p-5 w-full">
         <ul className="hidden md:flex gap-5">
           {navItem.map((link) => (
             <li>
