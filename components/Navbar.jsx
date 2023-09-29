@@ -1,9 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { IoMdClock } from "react-icons/io";
 import { LiaTelegramPlane, LiaTimesSolid, LiaBarsSolid } from "react-icons/lia";
 import { FiFacebook, FiInstagram, FiPhoneCall } from "react-icons/fi";
 import { FaLinkedin } from 'react-icons/fa'
+import { BsClock } from 'react-icons/bs'
 import Link from "next/link";
 import Image from "next/image";
 
@@ -58,7 +58,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className="hidden lg:flex items-center gap-2">
-            <IoMdClock size={40} color="blue" />
+            <BsClock size={30} color="blue" />
             <div>
               <p>Monday - Friday</p>
               <p className="text-[12px]">9.00 AM - 9.00 PM</p>
