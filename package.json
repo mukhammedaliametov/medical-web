@@ -9,10 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@portabletext/react": "^3.0.9",
+    "@sanity/block-content-to-react": "^3.0.0",
+    "@sanity/cli": "^3.16.7",
+    "@sanity/client": "^6.4.12",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.16.7",
     "next": "latest",
+    "next-sanity": "^5.5.4",
     "react": "latest",
     "react-dom": "latest",
-    "react-icons": "^4.11.0"
+    "react-icons": "^4.11.0",
+    "sanity": "^3.16.7",
+    "styled-components": "5.2"
   },
   "devDependencies": {
     "autoprefixer": "latest",

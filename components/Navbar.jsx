@@ -105,7 +105,7 @@ const Navbar = () => {
         }
       >
         {navItem.map((link) => (
-          <li className="mt-4">
+          <li className="mt-4" onClick={closeNav}>
             <Link className="text-[1.2rem]" href={link.url}>{link.name}</Link>
           </li>
         ))}
