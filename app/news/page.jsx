@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import client from "../client";
+import PageTitle from '@/components/PageTitle';
 
 const page = () => {
   const [posts, setPosts] = useState([]);
@@ -29,6 +30,8 @@ const page = () => {
   }, []);
 
   return (
+    <>
+      <PageTitle page='' link='News' url='' />
     <div className="max-w-[1400px] mx-auto p-8 lg:p-16">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3">
         {posts.map((post) => (
@@ -71,6 +74,7 @@ const page = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 
