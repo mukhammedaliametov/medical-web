@@ -9,3 +9,8 @@
 html{
   scroll-behavior: smooth;
 }
+
+#map{
+  width: 350px;
+  height: 350px;
+}
