@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="flex flex-col md:hidden p-2 px-4">
         <Logo />
         <div className="flex flex-col">
-          <ul className="flex flex-col gap-5 m-5 pb-4">
+          <ul className="flex flex-col gap-5 m-3 pb-4">
             {pageItems.map((link) => {
               return (
                 <li key={link}>
