@@ -10,8 +10,8 @@ const YandexMap = () => {
   };
 
   return (
-    <div className='w-full p-8 md:p-16'>
-      <YMaps id='map'>
+    <div className='w-full h-screen'>
+      <YMaps id='map' objectFit='cover' layout='fill'>
       <Map defaultState={defaultState}>
         <Placemark geometry={[55.684758, 37.738521]} />
       </Map>
