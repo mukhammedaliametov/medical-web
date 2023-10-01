@@ -5,6 +5,7 @@ import Link from "next/link";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import client from "../client";
 import PageTitle from '@/components/PageTitle';
+import Footer from "@/components/Footer";
 
 const page = () => {
   const [posts, setPosts] = useState([]);
