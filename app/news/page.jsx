@@ -62,7 +62,7 @@ const page = () => {
                 </h1>
                 <p className="border-t-[3px] border-[#1F3C88] mb-2 w-[20%]"></p>
                 <p className="pb-4 text-[1.2rem] flex items-center group cursor-pointer text-[#1F3C88]">
-                  <Link href={`/news/${post.slug.current}`}>See more</Link>
+                  <Link href={`/news/${post.slug.current}`}>See moree</Link>
                   <AiOutlineArrowRight
                     size={21}
                     className="ml-2 group-hover:ml-6 ease-out duration-300"

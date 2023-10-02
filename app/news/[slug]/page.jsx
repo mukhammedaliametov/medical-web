@@ -34,7 +34,7 @@ const page = () => {
   return (
     <>
       {isLoading ? (
-        <h1>Loading...</h1>
+        <h1>Loading....</h1>
       ) : (
         <>
           <PageTitle page={singlePost.title} link="News" url="/news" />
