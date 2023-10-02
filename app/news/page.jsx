@@ -33,7 +33,7 @@ const page = () => {
     <>
       <PageTitle page='' link='News' url='' />
     <div className="max-w-[1400px] mx-auto p-8 lg:p-16">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-6">
         {posts.map((post) => (
           <div key={post.slug.current}>
             <div

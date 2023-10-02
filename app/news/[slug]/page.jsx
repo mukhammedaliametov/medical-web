@@ -39,7 +39,7 @@ const page = () => {
         <>
           <PageTitle page={singlePost.title} link="News" url="/news" />
           <div className="max-w-[1400px] mx-auto p-8 md:p-16">
-            <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-4 md:gap-10">
+            <div className="flex flex-col justify-center items-center gap-4 md:gap-10">
               <div>
                 {singlePost.mainImage && singlePost.mainImage.asset && (
                   <Image
@@ -51,7 +51,7 @@ const page = () => {
                   />
                 )}
               </div>
-              <div className="">
+              <div className="mx-[10px] lg:mx-[240px]">
                 <h1 className="text-2xl font-bold font-montserrat">
                   {singlePost.title}
                 </h1>

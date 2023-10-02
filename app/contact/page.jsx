@@ -1,7 +1,6 @@
 import React from "react";
 import PageTitle from "@/components/PageTitle";
 import YandexMap from "@/components/YandexMap";
-import { FiPhoneCall } from "react-icons/fi";
 import Link from "next/link";
 
 const page = () => {
