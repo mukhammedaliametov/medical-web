@@ -51,10 +51,10 @@ const Navbar = () => {
         </div>
       </div>
       <div className="bg-[#1F3C88] text-white flex px-[30px] md:px-[60px] 2xl:px-[80px] justify-center md:justify-between items-center p-5 w-full">
-        <ul className="hidden md:flex gap-5">
+        <ul className="hidden md:flex gap-6">
           {pageItems.map((link) => {
             return (
-              <li key={link}>
+              <li key={link} className='font-montserrat'>
                 <Link href={link.url}>{link.name}</Link>
               </li>
             );
@@ -90,7 +90,7 @@ const Navbar = () => {
       >
         {pageItems.map((link) => {
           return (
-            <li className="mt-4" onClick={closeNav} key={link}>
+            <li className="mt-4 font-montserrat" onClick={closeNav} key={link}>
               <Link className="text-[1.2rem]" href={link.url}>
                 {link.name}
               </Link>

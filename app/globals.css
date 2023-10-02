@@ -11,6 +11,6 @@ html{
 }
 
 #map{
-  width: 350px;
-  height: 350px;
+  width: 550px !important;
+  height: 350px !important;
 }

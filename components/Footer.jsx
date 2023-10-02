@@ -15,7 +15,7 @@ const Footer = () => {
           <ul className="flex flex-col gap-5 m-3 pb-4">
             {pageItems.map((link) => {
               return (
-                <li key={link}>
+                <li key={link} className="font-montserrat">
                   <Link href={link.url}>{link.name}</Link>
                 </li>
               );
@@ -43,7 +43,7 @@ const Footer = () => {
           <ul className="flex gap-5 pr-4">
             {pageItems.map((link) => {
               return (
-                <li key={link}>
+                <li key={link} className="font-montserrat">
                   <Link href={link.url}>{link.name}</Link>
                 </li>
               );
