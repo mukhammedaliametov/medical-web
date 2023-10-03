@@ -34,15 +34,15 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-2">
             <FiPhoneCall size={30} color="blue" />
             <div>
-              <Link href="tel: 345-231-9782">345-231-9782</Link>
-              <p className="text-[12px]">Emergency Phone</p>
+              <Link href="tel: +998(55)104-63-17">+998(55)104-63-17</Link>
+              <p className="text-[12px]">Ayrıqsha telefon</p>
             </div>
           </div>
           <div className="hidden lg:flex items-center gap-2">
             <BsClock size={30} color="blue" />
             <div>
-              <p>Monday - Friday</p>
-              <p className="text-[12px]">9.00 AM - 9.00 PM</p>
+              <p>Dúyshembi - Shembi</p>
+              <p className="text-[12px]">8.00 - 21.00</p>
             </div>
           </div>
         </div>
