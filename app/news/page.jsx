@@ -31,7 +31,7 @@ const page = () => {
 
   return (
     <>
-      <PageTitle page='' link='News' url='' />
+      <PageTitle page='' link='Jańalıqlar' url='' />
     <div className="max-w-[1400px] mx-auto p-8 lg:p-16">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-6">
         {posts.map((post) => (
@@ -49,7 +49,7 @@ const page = () => {
                 />
                 <div className="hidden items-center justify-center group-hover:flex absolute z-2 hover:bg-black/60 text-white top-0 left-0 right-0 bottom-0">
                   <Link href={`/news/${post.slug.current}`} className="hidden group-hover:block">
-                    View Post
+                    Kóriw
                   </Link>
                 </div>
               </div>
@@ -62,7 +62,7 @@ const page = () => {
                 </h1>
                 <p className="border-t-[3px] border-[#1F3C88] mb-2 w-[20%]"></p>
                 <p className="pb-4 text-[1.2rem] flex items-center group cursor-pointer text-[#1F3C88]">
-                  <Link href={`/news/${post.slug.current}`}>See moree</Link>
+                  <Link href={`/news/${post.slug.current}`}>Tolıq maǵlıwmat</Link>
                   <AiOutlineArrowRight
                     size={21}
                     className="ml-2 group-hover:ml-6 ease-out duration-300"

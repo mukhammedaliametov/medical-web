@@ -1,40 +1,41 @@
 import React from "react";
-import { LiaStethoscopeSolid, LiaFileMedicalAltSolid } from "react-icons/lia";
-import { FaHandHoldingMedical, FaBriefcaseMedical } from 'react-icons/fa';
-import { CiMedicalClipboard } from 'react-icons/ci';
-import { GiConfirmed } from 'react-icons/gi';
+import { LiaStethoscopeSolid } from "react-icons/lia";
+import { FaBaby } from 'react-icons/fa';
+import { FaChildren, FaViruses } from 'react-icons/fa6';
+import { RiSurgicalMaskLine } from 'react-icons/ri'
+import { GiBrokenBone } from 'react-icons/gi';
 
 const page = () => {
   const servicesData = [
     {
-      name: "This is a services Lorem, ipsum dolor.",
+      name: "Terapiya bólimi.",
       icon: LiaStethoscopeSolid,
     },
     {
-      name: "This is a services Lorem, ipsum dolor.",
-      icon: LiaFileMedicalAltSolid,
+      name: "Balalar bólimi.",
+      icon: FaChildren,
     },
     {
-      name: "This is a services Lorem, ipsum dolor.",
-      icon: FaHandHoldingMedical,
+      name: "Xirurgiya bólimi.",
+      icon: RiSurgicalMaskLine,
     },
     {
-      name: "This is a services Lorem, ipsum dolor.",
-      icon: FaBriefcaseMedical,
+      name: "Travmatologiya bólimi",
+      icon: GiBrokenBone,
     },
     {
-      name: "This is a services Lorem, ipsum dolor.",
-      icon: CiMedicalClipboard,
+      name: "Tuwılıw bólimi.",
+      icon: FaBaby,
     },
     {
-      name: "This is a services Lorem, ipsum dolor.",
-      icon: GiConfirmed,
+      name: "Juqpalı kesellikler bólimi.",
+      icon: FaViruses,
     },
   ];
 
   return (
     <div id="services" className="w-full mx-auto p-8 md:p-16 bg-[#F9F9F9]">
-      <h1 className="text-center font-montserrat text-2xl">Our Services</h1>
+      <h1 className="text-center font-montserrat text-2xl">Xizmetlerimiz</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-6">
         {servicesData.map((item) => (
           <div className="flex p-4 group items-center cursor-pointer bg-white shadow-xl rounded-[5px] ease-out duration-300 hover:bg-[#1F3C88] hover:text-white">

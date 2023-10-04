@@ -37,7 +37,7 @@ const page = () => {
         <h1>Loading....</h1>
       ) : (
         <>
-          <PageTitle page={singlePost.title} link="News" url="/news" />
+          <PageTitle page={singlePost.title} link="Jańalıqlar" url="/news" />
           <div className="max-w-[1400px] mx-auto p-8 md:p-16">
             <div className="flex flex-col justify-center items-center gap-4 md:gap-10">
               <div>
@@ -58,7 +58,7 @@ const page = () => {
                 <p className="my-[16px] font-poppins">
                   <PortableText value={singlePost.body} />
                 </p>
-                <Button name="View posts page" url="/news" />
+                <Button name="Postlar bólimine ótiw" url="/news" />
               </div>
             </div>
           </div>

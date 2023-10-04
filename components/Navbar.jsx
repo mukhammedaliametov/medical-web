@@ -42,7 +42,7 @@ const Navbar = () => {
             <BsClock size={30} color="blue" />
             <div>
               <p>Dúyshembi - Shembi</p>
-              <p className="text-[12px]">8.00 - 21.00</p>
+              <p className="text-[12px]">8.00 - 20.00</p>
             </div>
           </div>
         </div>

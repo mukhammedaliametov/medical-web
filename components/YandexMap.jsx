@@ -12,15 +12,15 @@ import {
 
 const YandexMap = () => {
   const defaultState = {
-    center: [55.751574, 37.573856],
-    zoom: 5,
+    center: [43.75450155076469, 59.022443415213026],
+    zoom: 16,
   };
 
   return (
     <div className="w-full flex justify-center">
       <YMaps>
       <Map defaultState={defaultState} width={1300} height={350}>
-        <Placemark geometry={[55.684758, 37.738521]} />
+        <Placemark geometry={[43.75450155076469, 59.022443415213026]} />
         <FullscreenControl />
         <ZoomControl options={{ float: "right" }} />
         <TypeSelector options={{ float: "right" }} />
