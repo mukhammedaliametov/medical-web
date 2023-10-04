@@ -33,12 +33,12 @@ const Navbar = () => {
         <div className="hidden sm:flex items-center gap-6">
           <div className="hidden md:flex items-center gap-2">
             <FiPhoneCall size={30} color="blue" />
-            <div>
+            <div className="text-black">
               <Link href="tel: +998(55)104-63-17">+998(55)104-63-17</Link>
-              <p className="text-[12px]">Ayrıqsha telefon</p>
+              <p className="text-[12px]">Múrájat ushın telefon</p>
             </div>
           </div>
-          <div className="hidden lg:flex items-center gap-2">
+          <div className="hidden lg:flex items-center gap-2 text-black">
             <BsClock size={30} color="blue" />
             <div>
               <p>Dúyshembi - Shembi</p>

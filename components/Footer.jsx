@@ -78,7 +78,7 @@ const Footer = () => {
           </Link>{" "}
           &{" "}
           <Link href="" className="underline underline-offset-4">
-            Intellect Academy Khodjeli
+            Khodjeli IT Academy 
           </Link>
         </p>
       </div>
