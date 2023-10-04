@@ -6,8 +6,8 @@ import Footer from '@/components/Footer';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'www.muynak-rmb.uz',
-  description: 'This is a project medical project',
+  title: 'muynak-rmb.uz',
+  description: 'Bul web-sayt Moynaq rayonı medecina birlespesiniń rásmiy web-saytı.',
 }
 
 export default function RootLayout({ children }) {
