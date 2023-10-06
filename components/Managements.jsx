@@ -16,13 +16,12 @@ const Managements = () => {
                   src={item.img}
                   alt="manage"
                   objectFit="cover"
-                  className="group-hover:scale-125 ease-in-out h-screen duration-500 w-full"
+                  className="group-hover:scale-125 ease-in-out duration-500 w-full"
                 />
               </div>
               <div className="py-3 px-4 gap-3">
-                <h1 className="font-montserrat">{item.name}</h1>
                 <div className="border-b-[2px] w-40 border-[#1F3C88] my-2"></div>
-                <p className="flex gap-2">
+                <p className="flex gap-2 font-montserrat">
                   <FaUserAlt size={20} /> {item.job}
                 </p>
               </div>
