@@ -10,7 +10,7 @@ export const managementData = [
     img: Img1
   },
   {
-    job: 'Deputy head of treatment',
+    job: 'Ambulatoriya poliklinika jumısları boyınsha basshınıń orınbasarı',
     img: Img2
   },
   {

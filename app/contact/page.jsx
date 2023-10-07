@@ -28,7 +28,7 @@ const page = () => {
           <div>
             <p className="text-[1.1rem] font-realway">Email mánzil</p>
             <div className="border-t-[1px] border-[#1F3C88] my-1 w-40"></div>
-            <p>example@gmail.com</p>
+            <p>gulshexrautewlieva716@gmail.com</p>
           </div>
           <div>
             <p className="text-[1.1rem] font-realway">Jumıs waqtı</p>

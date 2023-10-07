@@ -66,9 +66,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t-[1px] border-white lg:mx-[120px]"></div>
-      <div className="mt-5 font-montserrat py-3 ml-6">
+      <div className="mt-5 py-3 ml-6">
         <p>
-          Developed by{" "}
+          Web-Sayt{" "}
           <Link
             className="underline underline-offset-4"
             href="https://instagram.com/ametov.me/"
@@ -79,7 +79,8 @@ const Footer = () => {
           &{" "}
           <Link href="" className="underline underline-offset-4">
             Khodjeli IT Academy 
-          </Link>
+          </Link>{" "}
+          tárepinnen islep shıǵarılǵan
         </p>
       </div>
     </div>
