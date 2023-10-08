@@ -58,7 +58,7 @@ const page = () => {
                 <p className="my-[16px] font-poppins">
                   <PortableText value={singlePost.body} />
                 </p>
-                <Button name="Postlar bólimine ótiw" url="/news" />
+                <Button name="Jańalıqlar bólimine ótiw" url="/news" />
               </div>
             </div>
           </div>

@@ -14,7 +14,7 @@ const Logo = () => {
         width="80"
         height="10"
       />
-      Moynaq rayonı <br /> medecina birlespesi
+      Moynaq rayonı <br /> medicina birlespesi
     </Link>
   );
 };
