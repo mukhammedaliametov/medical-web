@@ -69,14 +69,6 @@ const Footer = () => {
       <div className="mt-5 py-3 ml-6">
         <p>
           Web-Sayt{" "}
-          <Link
-            className="underline underline-offset-4"
-            href="https://instagram.com/ametov.me/"
-            target="_blank"
-          >
-            Mukhammedali Ametov
-          </Link>{" "}
-          &{" "}
           <Link href="" className="underline underline-offset-4">
             Khodjeli IT Academy 
           </Link>{" "}
